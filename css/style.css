@@ -60,4 +60,7 @@ header {
     width: 20%;
     margin-top: 10px;
 }
+.gallery__sub--active {
+    border: 2px solid yellow;
+}
 /* END GALLERY STYLES */
