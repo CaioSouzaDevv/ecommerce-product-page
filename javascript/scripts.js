@@ -1,13 +1,12 @@
 const galleryMain = document.querySelector('.gallery__main');
-const gallerySub = document.querySelector('.gallery__sub');
+const gallerySub = document.querySelectorAll('.gallery__sub');
 
 
 
-function lightbox () {
+gallerySub.forEach(img => {
+    img.addEventListener('click', function (e) {
 
-    gallerySub.addEventListener('click', function() {
-
-        galleryMain.src = gallerySub.src;
-
-    });
-}
+        galleryMain.src = e.target.src;
+    })
+    
+});
