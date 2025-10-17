@@ -11,6 +11,9 @@
     margin: 0 auto;
     padding: 0 10px;
 }
+.container {
+    margin: 25px auto;
+}
 a {
     text-decoration: none;
     color: #444;
@@ -28,6 +31,11 @@ li {
     padding: 0 20px;
 }
 /* START HEADER COMPONENT STYLES */
+header {
+    padding: 30px 0;
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 100px;
+}
 .cart {
     cursor: pointer;
 }
@@ -35,3 +43,21 @@ li {
     cursor: pointer;
 }
 /* END HEADER COMPONENT STYLES */
+
+/* GALLERY STYLES */
+.gallery {
+    width: 100%;
+    cursor: pointer;
+}
+.gallery img {
+    border-radius: 15px;
+}
+.gallery__main {
+    width: 70%;
+
+}
+.gallery__sub {
+    width: 20%;
+    margin-top: 10px;
+}
+/* END GALLERY STYLES */
