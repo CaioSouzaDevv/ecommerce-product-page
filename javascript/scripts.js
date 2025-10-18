@@ -3,7 +3,9 @@ const gallerySub = document.querySelectorAll('.gallery__sub');
 const btnMore = document.querySelector('.counter__more');
 const btnLess = document.querySelector('.counter__less');
 let counterAmount = document.querySelector('input[type="number"]')
-
+const addToCart = document.querySelector('.btn-cart');
+const btnCart = document.querySelector('.cart');
+const boxCart = document.querySelector('.box-cart');
 gallerySub.forEach(img => {
 
     img.addEventListener('click', function (e) {
@@ -35,7 +37,7 @@ function sumNumber() {
 
 }
 
-    function lessNumber() {
+function lessNumber() {
     btnLess.addEventListener('click', function (e) {
 
         e.preventDefault();
@@ -52,3 +54,13 @@ function sumNumber() {
 }
 sumNumber();
 lessNumber();
+
+btnCart.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    if (boxCart.style.display === "block") {
+        boxCart.style.display = "none";
+    } else {
+        boxCart.style.display = "block";
+    }
+})
