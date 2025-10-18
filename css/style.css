@@ -31,6 +31,9 @@
 .black {
     color: #000;
 }
+.gap-10 {
+    gap:10px;
+}
 
 a {
     text-decoration: none;
@@ -155,6 +158,9 @@ box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.2);
     z-index: 1;
     width: 350px;
     height: 250px;
+}
+.box-cart__alert {
+    gap: 20px;
 }
 
 /* end style cart */
