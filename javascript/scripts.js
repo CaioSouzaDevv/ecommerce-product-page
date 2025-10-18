@@ -83,7 +83,7 @@ addToCart.addEventListener('click', function (e) {
           <p>${valueTitle} x ${counterAmount.value} <br><strong>$:${totalSum.toFixed(2)}</strong></p>
         `;
     }
-  if (boxCart.style.display === "block") {
+    if (boxCart.style.display === "block") {
         boxCart.style.display = "none";
     } else {
         boxCart.style.display = "block";
