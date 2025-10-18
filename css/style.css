@@ -109,7 +109,11 @@ header {
 .gallery__sub--active {
     border: 2px solid yellow;
 }
-
+@media only screen and (max-width:576px) {
+    .gallery__sub {
+        margin: 50px 0;
+    }
+}
 /* END GALLERY STYLES */
 
 
