@@ -32,19 +32,30 @@
                     </nav>
                 </div>
 
-                <div class="col-7 d-flex justify-content-end">
-                    <img src="assets/images/icon-cart.svg" class="logo pt-3 pe-2" width="40" title="Cart" alt="Cart">
+                <div class="cart col-7 d-flex justify-content-end">
+                    <img src="assets/images/icon-cart.svg" class=" logo pt-3 pe-2" width="40" title="Cart" alt="Cart">
                     <img src="assets/images/image-avatar.png" class="cart pt-3 ps-2" width="40 " title="Cart"
                         alt="Cart">
+                    <div class="box-cart" style="display: none;">
+                        <h3>Cart</h3>
+                        <div class="d-flex justify-content-center align-items-center h-100">
 
+                            <div class="box-cart__alert d-flex">
+                                <p class="box-cart__item">Your cart is empty.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
 
-
     </header>
 
     <main>
+
+
         <div class="container">
             <div class="wrapper">
 
@@ -66,20 +77,52 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="col-6 d-flex">
+
+                        <div class="product d-flex flex-column justify-content-center align-items-start">
+                            <h4>SNEAKER COMPANY</h4>
+                            <h2 class="product__title">Fall Limite Sneakers</h2>
+
+                            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable
+                                rubber outer sole, they'll withstand everthing the weather can offer,</p>
+
+                            <div class="d-flex gap-10"><h3 class="product__value">$ 125.00 </h3><span class="">50%</span></div>
+
+                            <section class="counter" aria-label="Product quantity control">
+                                <div class="counter__numbers">
+                                    <div class="counter__controls" role="group" aria-label="Quantity selector">
+                                        <button type="button" class="btn counter__less" aria-label="Decrease quantity">
+                                            <img src="./assets/images/icon-minus.svg" alt="">
+                                        </button>
+
+                                        <input class="counter__amount" type="number" value="0" min="0"
+                                            aria-live="polite">
+
+                                        <button type="button" class="btn counter__more" aria-label="Increase quantity">
+                                            <img src="./assets/images/icon-plus.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button type="button"
+                                    class="btn-cart d-flex align-items-center justify-content-center btn w-50 bg-primary black"
+                                    aria-label="Add item to cart">
+                                    <img src="./assets/images/icon-cart.svg" class="me-3" width="20" height="20" alt="">
+                                    Add to Cart
+                                </button>
+                            </section>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-
-
-
-                <div class="col-6"></div>
-
             </div>
-
+        </div>
     </main>
-    </div>
-    </div>
-
-
 
     <!-- START SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
